@@ -1,6 +1,7 @@
 ---
 theme: seriph
 layout: center
+routerMode: hash
 title: Claude Co-work for Academics
 info: |
   ## Claude Co-work for Academics
