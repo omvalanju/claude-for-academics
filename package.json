@@ -1,0 +1,22 @@
+{
+  "name": "claude_for_mt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@oxc-parser/binding-win32-x64-msvc": "^0.135.0",
+    "@rolldown/binding-win32-x64-msvc": "^1.0.3",
+    "@slidev/cli": "^52.16.0",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "playwright-chromium": "^1.61.0"
+  }
+}

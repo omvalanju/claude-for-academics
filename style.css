@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --claude-cream: #FAF6F1;
+  --claude-terracotta: #D4714E;
+  --claude-terracotta-dark: #C15B38;
+  --claude-brown: #201A16;
+  --claude-text: #2D2520;
+  --claude-muted: #7A706A;
+  --claude-border: #E8E0D8;
+  --claude-surface: #FFFFFF;
+  --claude-surface-dim: #F5F0EA;
+}
+
+/* ──── Global Reset ──── */
+.slidev-layout {
+  background: var(--claude-cream) !important;
+  color: var(--claude-text) !important;
+  font-family: 'Inter', sans-serif !important;
+  padding: 2.5rem 3.5rem 5.5rem 3.5rem !important;
+}
+
+/* ──── Typography ──── */
+h1, h2, h3, h4, h5, h6, p, li, a, span, div {
+  font-family: 'Inter', sans-serif !important;
+}
+
+h1 {
+  color: var(--claude-text) !important;
+  font-weight: 600 !important;
+  font-size: 2.2rem !important;
+  line-height: 1.15 !important;
+  border-bottom: 2px solid var(--claude-terracotta) !important;
+  padding-bottom: 0.35rem !important;
+  margin-bottom: 0.6rem !important;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  color: var(--claude-terracotta) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: -0.4rem !important;
+  margin-bottom: 1.4rem !important;
+}
+
+h3 {
+  color: var(--claude-text) !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  margin-top: 0.8rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+p, li {
+  font-size: 0.82rem !important;
+  line-height: 1.65 !important;
+  color: var(--claude-text) !important;
+}
+
+li { margin-bottom: 0.35rem !important; }
+strong { color: var(--claude-text) !important; font-weight: 700 !important; }
+a { color: var(--claude-terracotta) !important; }
+
+/* ──── Visual Components (Cards/Grids) ──── */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--claude-surface);
+  border: 1px solid var(--claude-border);
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(32,26,22,0.04);
+}
+
+.card h3 {
+  margin-top: 0 !important;
+  color: var(--claude-terracotta-dark) !important;
+  border-bottom: 1px solid var(--claude-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.8rem !important;
+}
+
+.card p {
+  font-size: 0.75rem !important;
+  color: var(--claude-muted) !important;
+  margin: 0 !important;
+}
+
+/* ──── Cover Slide ──── */
+.slidev-layout.cover {
+  background: linear-gradient(160deg, var(--claude-cream) 0%, #F0E8DE 100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.slidev-layout.cover h1 {
+  border-bottom: none !important;
+  font-size: 3.2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em;
+}
+.slidev-layout.cover h2 {
+  font-size: 1.15rem !important;
+  margin-top: 0.2rem !important;
+}
+
+/* ──── End Slide ──── */
+.slidev-layout.end {
+  background: linear-gradient(160deg, #1A1512 0%, var(--claude-brown) 100%) !important;
+  color: var(--claude-cream) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.slidev-layout.end h1 {
+  color: var(--claude-cream) !important;
+  border-bottom: none !important;
+  font-size: 3rem !important;
+}
+.slidev-layout.end h2 { color: var(--claude-terracotta) !important; }
+.slidev-layout.end p, .slidev-layout.end li { color: #C8BFB7 !important; }
+
+/* ──── Code Blocks ──── */
+pre, code {
+  background: var(--claude-surface-dim) !important;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* ──── Dark mode ──── */
+html.dark .slidev-layout {
+  background: var(--claude-brown) !important;
+  color: var(--claude-cream) !important;
+}
+html.dark h1, html.dark h3, html.dark strong {
+  color: var(--claude-cream) !important;
+}
+html.dark p, html.dark li {
+  color: #C8BFB7 !important;
+}
+html.dark .card {
+  background: #1A1512 !important;
+  border-color: #3A322C !important;
+}
